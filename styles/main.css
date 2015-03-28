@@ -1,0 +1,17 @@
+.wrapper {
+  text-align: center;
+  margin-top: -20px; }
+  .wrapper .header {
+    background-color: green;
+    padding: 10px; }
+    .wrapper .header h1 {
+      margin-top: 30px; }
+  .wrapper .navigation {
+    background-color: red;
+    padding: 10px; }
+    .wrapper .navigation nav a {
+      font-size: 24px;
+      padding: 10px;
+      text-decoration: none; }
+  .wrapper .farmDescription {
+    padding-top: 20px; }
