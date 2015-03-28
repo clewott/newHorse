@@ -1,17 +1,31 @@
+html {
+  background-color: #C4BDC2;
+  background-size: cover; }
+
 .wrapper {
   text-align: center;
-  margin-top: -20px; }
+  margin-top: -20px;
+  background-color: #C4BDC2; }
   .wrapper .header {
-    background-color: green;
-    padding: 10px; }
+    background-color: #2F3E39;
+    padding: 20px; }
     .wrapper .header h1 {
-      margin-top: 30px; }
+      margin-top: 30px;
+      color: #EDE7EB; }
   .wrapper .navigation {
-    background-color: red;
+    background-color: #9586A9;
     padding: 10px; }
     .wrapper .navigation nav a {
       font-size: 24px;
       padding: 10px;
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
+    .wrapper .navigation nav a:hover {
+      color: black; }
+  .wrapper .carousel {
+    margin-top: 20px; }
+    .wrapper .carousel .carousel-inner .item img {
+      margin-right: auto;
+      margin-left: auto; }
   .wrapper .farmDescription {
     padding-top: 20px; }
