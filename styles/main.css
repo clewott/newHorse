@@ -1,11 +1,11 @@
 html {
-  background-color: #C4BDC2;
+  background-color: #F2B988;
   background-size: cover; }
 
 .wrapper {
   text-align: center;
   margin-top: -20px;
-  background-color: #C4BDC2; }
+  background-color: #F2B988; }
   .wrapper .header {
     background-color: #2F3E39;
     padding: 20px; }
@@ -29,3 +29,14 @@ html {
       margin-left: auto; }
   .wrapper .farmDescription {
     padding-top: 20px; }
+  .wrapper .pageTitle {
+    text-align: left;
+    margin-left: 20px; }
+  .wrapper .pageDesc {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 16px; }
+  .wrapper .horsePictures a {
+    text-decoration: none; }
+  .wrapper .horsePictures .eachHorse {
+    min-height: 400px; }
