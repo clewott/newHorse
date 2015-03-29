@@ -25,4 +25,16 @@ $(document).ready(function () {
       $(this).css('background-color', '#9586A9');
     });
 
+    function horseHover() {
+      $(".horseLink").on('mouseover', function() {
+        $(this).addClass('hoverEffect');
+      });
+
+      $(".horseLink").on('mouseout', function() {
+        $(this).removeClass('hoverEffect');
+      });
+    };
+
+    horseHover();
+
 });

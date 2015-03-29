@@ -1,4 +1,5 @@
 $mainBackground: #DED3B2;
+$textColor: #403328;
 
 html {
   background-color: $mainBackground;
@@ -82,6 +83,13 @@ html {
     }
     .eachHorse {
       min-height: 400px;
+      .horseLink {
+        transition: all 0.5s ease;
+        color: $textColor;
+        h4, h6 {
+          transition: all 0.5s ease;
+        }
+      }
     }
   }
   .contactInfo {
@@ -153,6 +161,15 @@ html {
       .gen4 {
         border: 1px solid black;
       }
+    }
+  }
+  .hoverEffect {
+    transition: all 0.5s ease;
+    opacity: 0.4;
+    color: #9D9289;
+    h4, h6 {
+      transition: all 0.5s ease;
+      color: #9D9289;
     }
   }
 }

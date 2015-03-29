@@ -60,6 +60,11 @@ html {
     text-decoration: none; }
   .wrapper .horsePictures .eachHorse {
     min-height: 400px; }
+    .wrapper .horsePictures .eachHorse .horseLink {
+      transition: all 0.5s ease;
+      color: #403328; }
+      .wrapper .horsePictures .eachHorse .horseLink h4, .wrapper .horsePictures .eachHorse .horseLink h6 {
+        transition: all 0.5s ease; }
   .wrapper .contactInfo {
     max-width: 600px;
     margin-left: auto;
@@ -110,3 +115,10 @@ html {
         border: 1px solid black; }
       .wrapper .pedigree table .gen4 {
         border: 1px solid black; }
+  .wrapper .hoverEffect {
+    transition: all 0.5s ease;
+    opacity: 0.4;
+    color: #9D9289; }
+    .wrapper .hoverEffect h4, .wrapper .hoverEffect h6 {
+      transition: all 0.5s ease;
+      color: #9D9289; }
