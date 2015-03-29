@@ -15,13 +15,33 @@ html {
   .wrapper .navigation {
     background-color: #9586A9;
     padding: 10px; }
-    .wrapper .navigation nav a {
-      font-size: 24px;
-      padding: 10px;
-      text-decoration: none;
-      color: black; }
-    .wrapper .navigation nav a:hover {
-      color: black; }
+    .wrapper .navigation .myMenuNew {
+      margin: 0;
+      padding: 0; }
+      .wrapper .navigation .myMenuNew li {
+        list-style: none;
+        display: inline-block;
+        font-size: 24px;
+        /*style the sub menu*/ }
+        .wrapper .navigation .myMenuNew li a:link, .wrapper .navigation .myMenuNew li a:visited {
+          display: block;
+          text-decoration: none;
+          padding: 5px 10px;
+          margin: 0;
+          color: #111; }
+        .wrapper .navigation .myMenuNew li ul {
+          position: absolute;
+          visibility: hidden;
+          border-top: 1px solid #fff;
+          margin: 0;
+          padding: 0;
+          z-index: 10; }
+          .wrapper .navigation .myMenuNew li ul li {
+            display: inline;
+            float: none; }
+            .wrapper .navigation .myMenuNew li ul li a:link, .wrapper .navigation .myMenuNew li ul li a:visited {
+              background-color: #9586A9;
+              width: auto; }
   .wrapper .carousel {
     margin-top: 20px; }
     .wrapper .carousel .carousel-inner .item img {
@@ -44,17 +64,43 @@ html {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto; }
-  .wrapper .pedigree table {
-    border: 1px solid black; }
-    .wrapper .pedigree table .pedigreeHeader th {
-      min-width: 530px;
-      height: 30px;
-      text-align: center; }
-    .wrapper .pedigree table .gen1 {
-      border: 1px solid black; }
-    .wrapper .pedigree table .gen2 {
-      border: 1px solid black; }
-    .wrapper .pedigree table .gen3 {
-      border: 1px solid black; }
-    .wrapper .pedigree table .gen4 {
-      border: 1px solid black; }
+  .wrapper .evaluation {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .wrapper .evaluation h3 {
+      margin-left: 20px; }
+    .wrapper .evaluation table {
+      border: 1px solid black;
+      width: 95%; }
+      .wrapper .evaluation table td {
+        padding-left: 5px; }
+      .wrapper .evaluation table .evaluationHeader {
+        border-bottom: 1px solid black; }
+        .wrapper .evaluation table .evaluationHeader th {
+          padding-left: 5px; }
+      .wrapper .evaluation table .score {
+        border-right: 1px solid black; }
+  .wrapper .mainImage {
+    text-align: center;
+    margin-bottom: 20px; }
+    .wrapper .mainImage .performance {
+      text-align: left; }
+      .wrapper .mainImage .performance h5 {
+        margin-left: 5px; }
+  .wrapper .pedigree {
+    margin-bottom: 20px; }
+    .wrapper .pedigree h3 {
+      text-align: left;
+      margin-left: 20px; }
+    .wrapper .pedigree table {
+      border: 1px solid black;
+      width: 95%; }
+      .wrapper .pedigree table .gen1 {
+        border: 1px solid black; }
+      .wrapper .pedigree table .gen2 {
+        border: 1px solid black; }
+      .wrapper .pedigree table .gen3 {
+        border: 1px solid black; }
+      .wrapper .pedigree table .gen4 {
+        border: 1px solid black; }

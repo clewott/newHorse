@@ -20,18 +20,41 @@ html {
   .navigation {
     background-color: #9586A9;
     padding: 10px;
-    nav {
-      a {
-        font-size: 24px;
-        padding: 10px;
-        text-decoration: none;
-        color: black;
-      }
-      a:hover {
-        color: black;
+    .myMenuNew {
+      margin:0;
+      padding:0;
+      li {
+        list-style:none;
+        display: inline-block;
+        font-size:24px;
+        a:link, a:visited {
+          display:block;
+          text-decoration:none;
+          padding: 5px 10px;
+          margin:0;
+          color:#111;
+        }
+        /*style the sub menu*/
+        ul {
+          position:absolute;
+          visibility:hidden;
+          border-top:1px solid #fff;
+          margin:0;
+          padding:0;
+          z-index: 10;
+          li {
+            display:inline;
+            float:none;
+            a:link, a:visited {
+              background-color: #9586A9;
+              width:auto;
+            }
+          }
+        }
       }
     }
   }
+
   .carousel {
     margin-top: 20px;
     .carousel-inner {
@@ -66,16 +89,49 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
-  .pedigree {
+  .evaluation {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h3 {
+      margin-left: 20px;
+    }
     table {
       border: 1px solid black;
-      .pedigreeHeader {
+      width: 95%;
+      td {
+        padding-left: 5px;
+      }
+      .evaluationHeader {
+        border-bottom: 1px solid black;
         th {
-          min-width: 530px;
-          height: 30px;
-          text-align: center;
+          padding-left: 5px;
         }
       }
+      .score {
+        border-right: 1px solid black;
+      }
+    }
+  }
+  .mainImage {
+    text-align:center;
+    margin-bottom: 20px;
+    .performance {
+      text-align: left;
+      h5 {
+        margin-left: 5px;
+      }
+    }
+  }
+  .pedigree {
+    margin-bottom: 20px;
+    h3 {
+      text-align: left;
+      margin-left: 20px;
+    }
+    table {
+      border: 1px solid black;
+      width: 95%;
       .gen1 {
         border: 1px solid black;
       }
