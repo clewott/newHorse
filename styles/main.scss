@@ -88,6 +88,15 @@ html {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    .lisaOtten {
+      max-height: 400px;
+    }
+  }
+  .mainFooter {
+    margin-top: 20px;
+    p {
+      margin: 0px;
+    }
   }
   .evaluation {
     text-align: left;

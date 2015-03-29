@@ -42,11 +42,34 @@
     <div class="pageDesc">
       <p>KFPS Approved Friesian Breeding Stallions, from the most desireable bloodlines, gives North American breeders the opportunity to produce dressage and driving champions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis asperiores soluta, modi est itaque similique placeat vel laudantium. Iure, corrupti ex! Consequatur iste tenetur, blanditiis. Quibusdam illo est, aliquam.</p>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Galeno Tyme</h4>
+          </div>
+          <div class="modal-body">
+            <img src="/images/GalenoTymeJumping.jpg" alt="Galeno Tyme Jumping">
+            <p></p>
+            <p>Winner of the 2004 100-Day Stallion Test.</p>
+            <img src="/images/GalenoTymeRiding.jpg" alt="Galeno Tyme Riding">
+            <p>Images provided by Jennifer Mosier of <a href="http://galenotyme.com/" target="_blank">Konza Prarie Dressage</a>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="pedigree">
       <h3>My Lady Galina's Pedigree</h3>
       <table cellspacing="0" align="center">
         <tr>
-          <td rowspan="8" class="gen1"><p>Galeno Tyme</p>
+          <td rowspan="8" class="gen1"><a href="#" data-toggle="modal" data-target="#myModal">Galeno Tyme</a>
             </td>
           <td rowspan="4" class="gen2">Granulit</td>
           <td rowspan="2" class="gen3">Grannus</td>
@@ -110,6 +133,12 @@
           <td class="gen4">Goodnight Sugar</td>
         </tr>
       </table>
+    </div>
+    <div>
+      <footer class="mainFooter col-md-12">
+        <p>© 2014 - 2015, All Rights Reserved.</p>
+        <p>Web site designed by <a href="http://www.Chris-Otten.com" target="_blank">Chris Otten</a>.</p>
+      </footer>
     </div>
   </div>
 </body>
