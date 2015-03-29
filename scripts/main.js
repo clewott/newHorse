@@ -17,12 +17,12 @@ $(document).ready(function () {
 			$(this).find('ul').css('visibility', 'hidden');
 		};
 
-    $(".navigation a").on('mouseover', function() {
-      $(this).css('background-color', '#C0BCCB');
+    $(".header a").on('mouseover', function() {
+      $(this).css('background-color', '#C5BFB2');
     });
 
-    $(".navigation a").on('mouseout', function() {
-      $(this).css('background-color', '#9586A9');
+    $(".header a").on('mouseout', function() {
+      $(this).css('background-color', '#3B3F3F');
     });
 
     function horseHover() {

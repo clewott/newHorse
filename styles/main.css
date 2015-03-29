@@ -1,52 +1,60 @@
 html {
-  background-color: #DED3B2;
+  background-color: #9F8E88;
   background-size: cover; }
 
 .wrapper {
   text-align: center;
   margin-top: -20px;
-  background-color: #DED3B2; }
+  background-color: #9F8E88; }
   .wrapper .header {
-    background-color: #2F3E39;
+    background-color: #3B3F3F;
     padding: 20px; }
     .wrapper .header h1 {
       margin-top: 30px;
-      color: #EDE7EB; }
-  .wrapper .navigation {
-    background-color: #9586A9;
-    padding: 10px; }
-    .wrapper .navigation .myMenuNew {
-      margin: 0;
+      color: #999999; }
+    .wrapper .header .myMenuNew {
+      margin-top: 30px;
       padding: 0; }
-      .wrapper .navigation .myMenuNew li {
+      .wrapper .header .myMenuNew li {
         list-style: none;
         display: inline-block;
         font-size: 24px;
         /*style the sub menu*/ }
-        .wrapper .navigation .myMenuNew li a:link, .wrapper .navigation .myMenuNew li a:visited {
+        .wrapper .header .myMenuNew li a:link, .wrapper .header .myMenuNew li a:visited {
           display: block;
           text-decoration: none;
           padding: 5px 10px;
           margin: 0;
-          color: #111; }
-        .wrapper .navigation .myMenuNew li ul {
+          color: #999999; }
+        .wrapper .header .myMenuNew li ul {
           position: absolute;
           visibility: hidden;
           border-top: 1px solid #fff;
           margin: 0;
           padding: 0;
           z-index: 10; }
-          .wrapper .navigation .myMenuNew li ul li {
+          .wrapper .header .myMenuNew li ul li {
             display: inline;
             float: none; }
-            .wrapper .navigation .myMenuNew li ul li a:link, .wrapper .navigation .myMenuNew li ul li a:visited {
-              background-color: #9586A9;
+            .wrapper .header .myMenuNew li ul li a:link, .wrapper .header .myMenuNew li ul li a:visited {
+              background-color: #3B3F3F;
               width: auto; }
   .wrapper .carousel {
     margin-top: 20px; }
     .wrapper .carousel .carousel-inner .item img {
       margin-right: auto;
       margin-left: auto; }
+    .wrapper .carousel .carousel-indicators li {
+      border: 1px solid #403328; }
+    .wrapper .carousel .carousel-indicators .active {
+      background-color: #403328; }
+    .wrapper .carousel .carousel-caption {
+      padding: 0px 0px 20px 0px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 450px;
+      background-color: rgba(250, 250, 250, 0.5);
+      color: #403328; }
   .wrapper .farmDescription {
     padding-top: 20px; }
   .wrapper .pageTitle {
