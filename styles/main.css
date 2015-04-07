@@ -74,7 +74,7 @@ html {
       .wrapper .horsePictures .eachHorse .horseLink h4, .wrapper .horsePictures .eachHorse .horseLink h6 {
         transition: all 0.5s ease; }
   .wrapper .contactInfo {
-    max-width: 600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto; }
     .wrapper .contactInfo .lisaOtten {

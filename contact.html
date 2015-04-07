@@ -5,6 +5,7 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <title>Oak Hill Farm | Lisa Otten</title>
+
 </head>
 <body>
   <div class="wrapper">
@@ -48,6 +49,45 @@
         <h4>Lisa Otten (owner)</h4>
         <h4>Email: <a href="mailto:lisaot61@gmail.com">LisaOt61@gmail.com</a></h4>
         <h4>Phone: <a href="tel:+8039842081">803-984-2081</a></h4>
+        <form class="form-horizontal" id="contact_form">
+          <fieldset>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="name">Name</label>
+            <div class="col-md-10">
+            <input id="name" name="name" type="text" placeholder="Enter your first & last name here..." class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="email">Email</label>
+            <div class="col-md-10">
+            <input id="email" name="email" type="text" placeholder="Enter your email address here..." class="form-control input-md" required="">
+
+            </div>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="msg">Message</label>
+            <div class="col-md-10">
+              <textarea class="form-control" id="msg" name="msg" cols="6" rows="6" placeholder="Enter you email message here..."></textarea>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-12 control-label" for="submit"></label>
+            <div class="col-md-12">
+              <button id="submit" name="submit" class="btn btn-primary">Contact Lisa</button>
+            </div>
+          </div>
+
+          </fieldset>
+        </form>
       </div>
     </div>
     <div>
