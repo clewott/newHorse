@@ -37,4 +37,46 @@ $(document).ready(function () {
 
     horseHover();
 
+    $(function()  {
+        $("#contact_form").submit(function()
+        {
+            var email = $("#email").val();
+            var name = $("#name").val();
+            var msg = $("#msg").val();
+            $.ajax(
+            {
+                type: "POST",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                data: {
+                    'key': '6FOJNhZFpKFKScDI2wIbHQ',
+                    'message': {
+                        'from_email': email,
+                        'from_name': name,
+                        'headers': {
+                            'Reply-To': email
+                        },
+                        'subject': 'Message From Oak Hill Farm Website',
+                        'text': msg,
+                        'to': [
+                        {
+                            'email': 'lisaot61@gmail.com',
+                            'name': 'Lisa Otten',
+                            'type': 'to'
+                        }]
+                    }
+                }
+            })
+            .done(function(response) {
+                alert('Your message has been sent. Thank you!');
+                $("#name").val('');
+                $("#email").val('');
+                $("#msg").val('');
+            })
+            .fail(function(response) {
+                alert('Error sending message.');
+            });
+            return false;
+        });
+    });
+
 });
